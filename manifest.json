@@ -5,12 +5,16 @@
   "description": "Fill login forms into Profitero apps",
   "version": "1.0",
 
-  "browser_action": {
+  "background" : {
+    "scripts": ["plf-background.js"],
+    "persistent": false
+  },
+
+  "page_action": {
     "default_icon": "plf-icon.png",
     "default_popup": "plf-popup.html"
   },
   "permissions": [
-    "activeTab",
-    "storage"
+    "declarativeContent"
   ]
 }
